@@ -138,3 +138,37 @@ docker images
 docker run -p 5000:5000 mypyapp:latest
 cd flaskapp
 docker run -p 5000:5000 mypyapp:latest
+source venv/bin/activate
+cd ..
+cd ~
+sudo --i
+source myapp/bin/activate
+ls
+docker images
+cd flakapp
+ls
+cd flaskapp
+docker run -p 5000:5000
+docker run -p 5000:5000 mypyapp:latest
+ls -ltr
+cd ..
+ls -ltr
+echo "# pyappflask" >> README.md
+git init
+git add .
+git status
+git commit -m "pyapp"
+git remote add origin https://github.com/kadiyalaabhishek/pyappflask.git
+git push -u origin main
+git branch -m main
+git push -u origin main
+git remote set-url origin https://YOUR_TOKEN@github.com/kadiyalaabhishek/pyappflask.git
+git push -u origin main
+sed -i '/dataclasses==0.8/d' requirements.txt
+git push -u origin main
+git remote set-url origin https://YOUR_TOKEN@github.com/kadiyalaabhishek/pyappflask.git
+git push -u origin main
+sed -i '/dataclasses==0.8/d' requirements.txt
+docker build -t flask-app .
+docker run -d -p 80:5000 --name web-container flask-app
+docker ps
